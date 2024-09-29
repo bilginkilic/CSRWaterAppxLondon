@@ -1,0 +1,17 @@
+type Todo @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  masa: String
+}
+
+type Statisticx @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  username: String
+  savedvalue: Float
+  totalvalue: Float
+  currerntsavedvalue: Float
+  currentotalvalue: Float
+  startdate: AWSDateTime
+  visitcount: Int
+  lastupdatetime: AWSDateTime
+}
+ 
